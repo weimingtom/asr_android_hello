@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:text="语音识别"
+	        android:layout_marginLeft="10dp"  
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+	    <Button
+	        android:id="@+id/btnPlayFile"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="播放" 
+	        android:textSize="16sp"
+	        />
+	</LinearLayout>    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <Button
+	        android:id="@+id/btnListen1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="普通话识别" 
+	        android:textSize="16sp"
+	        />
+	    <Button
+	        android:id="@+id/btnListen2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="粤语识别" 
+	        android:textSize="16sp"
+	        />
+		<Button
+	        android:id="@+id/btnListen3"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="英语识别" 
+	        android:textSize="16sp"
+	        />
+    </LinearLayout>
+        
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请点击上方按钮开始转换..." 
+        android:textColor="#FFAAAAAA"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0px"
+         android:layout_weight="1"
+         android:orientation="vertical" >
+	    <EditText
+	        android:id="@+id/textViewContent"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="match_parent"
+	       	android:gravity="top"
+	       	android:paddingLeft="10dp"
+	       	android:paddingRight="10dp"
+	        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+		<Button
+	        android:id="@+id/buttonCancel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="放弃保存" />	
+       <Button
+	        android:id="@+id/buttonClipboard"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="复制" />	
+        <Button
+	        android:id="@+id/buttonClose"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="保存" />
+    </LinearLayout>
+
+</LinearLayout>

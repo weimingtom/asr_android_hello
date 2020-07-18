@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+	        android:id="@+id/btnListen1"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="普通话" />
+	    <Button
+	        android:id="@+id/btnListen2"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="粤语" />
+		<Button
+	        android:id="@+id/btnListen3"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="英语" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请点击上方按钮开始识别..." 
+        android:textColor="#FFAAAAAA"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0px"
+         android:layout_weight="1"
+         android:orientation="vertical" >
+	   	 <EditText
+	       	android:id="@+id/textViewContent"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="match_parent"
+	       	android:text="" 
+	       	android:gravity="top"
+	       	android:paddingLeft="10dp"
+	       	android:paddingRight="10dp"
+        	/>
+     </LinearLayout>
+    <!-- 
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        
+    </ScrollView>
+ 	-->
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+		<Button
+	        android:id="@+id/buttonCancel"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="放弃保存" />	
+       <Button
+	        android:id="@+id/buttonClipboard"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="复制" />		    
+        <Button
+	        android:id="@+id/buttonClose"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="保存" />
+    </LinearLayout>
+
+</LinearLayout>

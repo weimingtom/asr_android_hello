@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF"    
+    >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="录音时间："
+	        />
+	    <TextView
+	        android:id="@+id/timer_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="00:00"
+	        />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/state_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="IDLE/RECORDING"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/filename_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:visibility="gone"
+        />
+    
+    <TextView
+        android:id="@+id/bars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="audioLevel"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+	    <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="开始录音" />
+	
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="同步识别" />    
+    
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+	    <LinearLayout 
+	        android:id="@+id/viewVoice"
+	        android:orientation="vertical"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+		    android:layout_gravity="center|center_vertical"
+		    >
+	        <ImageView
+		        android:src="@drawable/voice_empty"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        />
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+		        android:text="聆听中"
+		        android:layout_gravity="center|center_vertical"
+		        />
+	    </LinearLayout>
+        <ListView
+	        android:id="@+id/viewListView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:cacheColorHint="#00000000"
+	        android:divider="@drawable/speech__main_menu_list_line"
+	        android:listSelector="#00000000"
+	        />
+	</FrameLayout>    
+</LinearLayout>
